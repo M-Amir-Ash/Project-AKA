@@ -2,8 +2,7 @@
 using namespace std;
 
 // Function to calculate stats recursively for a single level
-void calculateStatsRecursive(int level, float baseHP, float baseATK, float baseDEF, float baseSpeed,  
-                             float growthHP, float growthATK, float growthDEF, int& hp, int& atk, int& def) {
+void calculateStatsRecursive(int level, float baseHP, float baseATK, float baseDEF, float baseSpeed, float growthHP, float growthATK, float growthDEF, int& hp, int& atk, int& def) {
     if (level == 1) {
         hp = (int)(baseHP + 0.5);
         atk = (int)(baseATK + 0.5);
