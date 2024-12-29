@@ -15,8 +15,7 @@ void calculateStatsRecursive(int level, float baseHP, float baseATK, float baseD
 }
 
 // Function to calculate stats iteratively for multiple levels
-void calculateStatsIterative(float baseHP, float baseATK, float baseDEF, float baseSpeed,  
-                             float growthHP, float growthATK, float growthDEF, int levels[], int size) {
+void calculateStatsIterative(float baseHP, float baseATK, float baseDEF, float baseSpeed, float growthHP, float growthATK, float growthDEF, int levels[], int size) {
     for (int i = 0; i < size; i++) {
         int level = levels[i];
         int hp = (int)(baseHP + (level - 1) * growthHP + 0.5);
